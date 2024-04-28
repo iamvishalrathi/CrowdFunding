@@ -5,7 +5,7 @@ module.exports = {
   zksolc: {
     version: "1.3.9",
     compilerSource: "binary",
-    defaultNetwork: 'sepolia',
+    
     settings: {
       optimizer: {
         enabled: true,
@@ -13,11 +13,7 @@ module.exports = {
     },
   },
   networks: {
-    hardhat:{},
-    sepolia:{
-      url: 'https://11155111.rpc.thirdweb.com',
-      account: [`0x${process.env.PRIVATE_KEY}`]
-    },
+    
 
     zksync_testnet: {
       url: "https://zksync2-testnet.zksync.dev",
