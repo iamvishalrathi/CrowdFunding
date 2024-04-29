@@ -15,7 +15,7 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
       <h1 className="font-epilogue font-bold text-[18px] text-white text-left ">
         {title} ({campaigns.length})
       </h1>
-      <div className=" flex flex-wrap mt-[20px] gap-[26px] ">
+      <div className=" flex flex-wrap mt-[20px] gap-[50px] ">
         {isLoading && (
           <img
             src={loader}

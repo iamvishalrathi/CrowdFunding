@@ -11,12 +11,13 @@ const Fundcards = ({
   amountCollected,
   image,
   handleclick,
-  //key,
+  i,
 }) => {
   const remainingDays = daysLeft(deadline);
 
   return (
     <div
+      key={i}
       className=" sm:w-[250px] w-full rounded-[15px] bg-[#29295d] "
       onClick={handleclick}
     >
