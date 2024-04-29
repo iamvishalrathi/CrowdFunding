@@ -101,7 +101,13 @@ const CampaignDetails = () => {
             </h4>
             <div className=" flex flex-col gap-4 ">
               {donators.length > 0 ? (
-                donators.map((item, index) => <div key={index}>Donators</div>)
+                donators.map((item, index) => (
+                  <div key={`${item.donator}-${index}`}>
+                    <p className="font-epilogue p-3 font-semibold text-[16px] text-white break-11 ">
+                      {index + 1}. {item.donator}{" "}
+                    </p>
+                  </div>
+                ))
               ) : (
                 <p className="flex-1 font-epilogue p-3 font-semibold text-[16px] text-[#ffffff] ">
                   No Donators yet. Be the first one!
