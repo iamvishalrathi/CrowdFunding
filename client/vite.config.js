@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "Crowdfunding",
   plugins: [react(), nodePolyfills()],
   define: {
     "process.env": {},
