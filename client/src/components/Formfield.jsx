@@ -12,7 +12,7 @@ const Formfield = ({
     <>
       <label className=" flex-1 w-full flex flex-col ">
         {LabelName && (
-          <span className="font-epilogue font-medium text-[14px] leading-[22px] text-[#808191] mb-[10px] font-semibold ">
+          <span className="font-epilogue text-[14px] leading-[22px] text-[#808191] mb-[10px] font-semibold ">
             {LabelName}
           </span>
         )}

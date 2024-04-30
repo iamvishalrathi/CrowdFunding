@@ -4,6 +4,7 @@ import { loader } from "../assets";
 import Fundcards from "./Fundcards";
 
 const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
+  const i = 0;
   const navigate = useNavigate();
 
   const handleNavigate = (campaign) => {
@@ -33,7 +34,7 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
           campaigns.length > 0 &&
           campaigns.map((campaign) => (
             <Fundcards
-              key={campaign.id}
+              key={campaign.pId}
               {...campaign}
               handleclick={() => handleNavigate(campaign)}
             />

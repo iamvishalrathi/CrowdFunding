@@ -11,14 +11,14 @@ const Fundcards = ({
   amountCollected,
   image,
   handleclick,
-  i,
 }) => {
   const remainingDays = daysLeft(deadline);
+  let i = 0;
 
   return (
     <div
-      key={i}
-      className=" sm:w-[250px] w-full rounded-[15px] bg-[#29295d] "
+      key={++i}
+      className=" sm:w-[250px] w-full rounded-[15px] bg-[#03254E] "
       onClick={handleclick}
     >
       <img
@@ -37,7 +37,7 @@ const Fundcards = ({
             className=" w-[17px] h-[17px] object-contain "
           />
           <p className=" ml-2 font-epilogue font-medium text-[12px] text-[#000000] ">
-            Eductaion
+            Campaign
           </p>
         </div>
         <div className="block">

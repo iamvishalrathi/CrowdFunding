@@ -8,6 +8,7 @@ import { thirdweb } from "../assets";
 import Custombuttom from "../components/Custom_Buttom";
 import CountBox from "../components/CountBox";
 import { BigNumber } from "bignumber.js";
+import Loader from "../components/Loader";
 
 const CampaignDetails = () => {
   const { state } = useLocation();
@@ -34,7 +35,7 @@ const CampaignDetails = () => {
 
   return (
     <div>
-      {isLoading && "isLoading"}
+      {isLoading && <Loader />}
       <div className="w-full flex md:flex-row flex-col mt-10 gap-[30px]">
         <div className="flex-1 flex-col">
           <img
