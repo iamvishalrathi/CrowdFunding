@@ -18,7 +18,7 @@ const Fundcards = ({
   return (
     <div
       key={++i}
-      className=" sm:w-[250px] w-full rounded-[15px] bg-[#03254E] "
+      className=" sm:w-[250px] w-full rounded-[15px] bg-[#3f9966] "
       onClick={handleclick}
     >
       <img
@@ -44,7 +44,7 @@ const Fundcards = ({
           <h3 className="font-epilogue font-semibold text-[16px] text-white text-left leading-6 truncate  ">
             {title}
           </h3>
-          <p className=" mt-[5px] font-epilogue font-normal text-[#808191] text-left leading-6 truncate ">
+          <p className=" mt-[5px] font-epilogue font-normal text-black text-left leading-6 truncate ">
             {description}
           </p>
         </div>
