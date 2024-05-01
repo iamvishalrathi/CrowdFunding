@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import "./output.css";
+import "./index.css";
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 
 import { BrowserRouter as Router } from "react-router-dom";

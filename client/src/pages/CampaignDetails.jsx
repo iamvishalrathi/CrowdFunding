@@ -7,7 +7,6 @@ import { calculateBarPercentage, daysLeft } from "../utils";
 import { thirdweb } from "../assets";
 import Custombuttom from "../components/Custom_Buttom";
 import CountBox from "../components/CountBox";
-import { BigNumber } from "bignumber.js";
 import Loader from "../components/Loader";
 
 const CampaignDetails = () => {

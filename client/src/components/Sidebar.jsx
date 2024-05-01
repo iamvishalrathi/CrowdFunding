@@ -28,7 +28,7 @@ const Icon = (props) => {
   );
 };
 
-const Sidebar = () => {
+const Sidebar = ({ handle_click }) => {
   const navigate = useNavigate();
   const [isActive, setIsActive] = useState("dashboard");
   return (
@@ -54,7 +54,11 @@ const Sidebar = () => {
           ))}
         </div>
 
-        <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun} />
+        <Icon
+          styles="bg-[#1c1c24] shadow-secondary"
+          imgUrl={sun}
+          handleClick={handle_click}
+        />
       </div>
     </div>
   );
