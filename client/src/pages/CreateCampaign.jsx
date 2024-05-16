@@ -7,6 +7,7 @@ import Custombuttom from "../components/Custom_Buttom";
 import { checkIfImage } from "../utils";
 import Formfield from "../components/Formfield";
 import Loader from "../components/Loader";
+import axios from "axios";
 
 const CreateCampaign = () => {
   const navigate = useNavigate();
@@ -19,6 +20,9 @@ const CreateCampaign = () => {
     target: "",
     deadline: "",
     image: "",
+    contact: "",
+    proof: "",
+    proofCampaign: "",
   });
 
   const handleFormfieldchange = (fieldName, e) => {
@@ -36,6 +40,10 @@ const CreateCampaign = () => {
         });
         setisLoading(false);
         navigate("/");
+        axios
+          .post("http://localhost:8081/test", form)
+          .then((res) => console.log(res))
+          .catch((err) => console.log(err));
       } else {
         alert("Provide valid image URL");
         setform({ ...form, image: "" });
@@ -112,6 +120,28 @@ const CreateCampaign = () => {
           Value_={form.image}
           handleChange={(e) => handleFormfieldchange("image", e)}
         />
+        <Formfield
+          LabelName="Contact No"
+          placeholder="Type your Number"
+          inputType="number"
+          Value_={form.contact}
+          handleChange={(e) => handleFormfieldchange("contact", e)}
+        />
+        <Formfield
+          LabelName="Identification Proof"
+          placeholder="Place file URL of your identification proof "
+          inputType="text"
+          Value_={form.proof}
+          handleChange={(e) => handleFormfieldchange("proof", e)}
+        />
+        <Formfield
+          LabelName="Proof for Campaign"
+          placeholder="Place file URL for Your Campaign Verification "
+          inputType="text"
+          Value_={form.proofCampaign}
+          handleChange={(e) => handleFormfieldchange("proofCampaign", e)}
+        />
+
         <div className=" flex justify-center items-center mt-[40px]  ">
           <Custombuttom
             btntype="submit"

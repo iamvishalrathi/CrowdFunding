@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useStateContext } from "../context";
 import DisplayCampaigns from "../components/DisplayCampaigns";
+import Banner from "../components/Banner";
 
 const Home = () => {
   const [isLoading, setisLoading] = useState(false);
@@ -17,11 +18,14 @@ const Home = () => {
     if (contract) fetchcampaigns();
   }, [address, contract]);
   return (
-    <DisplayCampaigns
-      title="All Campaigns"
-      isLoading={isLoading}
-      campaigns={campaigns}
-    />
+    <>
+      <Banner />
+      <DisplayCampaigns
+        title="All Campaigns"
+        isLoading={isLoading}
+        campaigns={campaigns}
+      />
+    </>
   );
 };
 

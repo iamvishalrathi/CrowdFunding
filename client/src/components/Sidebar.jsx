@@ -8,7 +8,7 @@ const Icon = (props) => {
   const { styles, name, imgUrl, isActive, disabled, handleClick } = props;
   return (
     <div
-      className={` w-[48px] rounded-[10px] ${
+      className={` w-[48px] rounded-[10px] p-2 ${
         isActive && isActive === name && "bg-[#a8b5c2]"
       } flex justify-center items-center ${
         !disabled && "cursor-pointer"
@@ -16,12 +16,12 @@ const Icon = (props) => {
       onClick={handleClick}
     >
       {!isActive ? (
-        <img src={imgUrl} alt="fund_logo" className="w-3/4 h-3/4" />
+        <img src={logo} className="w-32 rounded-lg shadow-lg" alt="logo" />
       ) : (
         <img
           src={imgUrl}
           alt="fund_logo"
-          className={`w-3/4 h-3/4 ${isActive !== name && "grayscale"}`}
+          className={`w-3/4 h-3/4  ${isActive !== name && "grayscale"}`}
         />
       )}
     </div>
@@ -32,13 +32,13 @@ const Sidebar = ({ handle_click }) => {
   const navigate = useNavigate();
   const [isActive, setIsActive] = useState("dashboard");
   return (
-    <div className="flex justify-between items-center flex-col sticky top-5 h-[93vh">
+    <div className="flex justify-between flex-row sticky h-[76px]">
       <Link to="/">
         <Icon imgUrl={logo} styles="w-[52px] h-[52px] bg-[#2c2f32]" />
       </Link>
 
-      <div className="flex-1 flex flex-col justify-between items-center bg-[#0A2E36] rounded-[20px] w-[76px] py-4 mt-10">
-        <div className=" flex flex-col justify-center items-center gap-5">
+      <div className="flex-1 flex flex-row justify-center  items-center bg-[#aa63d3] rounded-[20px] h-[60px] p-2 ml-10">
+        <div className=" flex flex-row justify-center items-center gap-5">
           {navlinks.map((Link) => (
             <Icon
               key={Link.name}
@@ -54,11 +54,11 @@ const Sidebar = ({ handle_click }) => {
           ))}
         </div>
 
-        <Icon
+        {/* <Icon
           styles="bg-[#1c1c24] shadow-secondary"
           imgUrl={sun}
           handleClick={handle_click}
-        />
+        /> */}
       </div>
     </div>
   );

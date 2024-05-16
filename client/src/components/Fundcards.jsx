@@ -18,7 +18,7 @@ const Fundcards = ({
   return (
     <div
       key={++i}
-      className=" sm:w-[250px] w-full rounded-[15px] bg-[#3f9966] "
+      className=" sm:w-[250px] w-full rounded-[15px] bg-[#a567de] "
       onClick={handleclick}
     >
       <img
