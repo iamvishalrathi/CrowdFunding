@@ -38,7 +38,9 @@ To participate in or initiate a crowdfunding campaign on our platform:
 
 Interested in contributing? We welcome developers, designers, strategists, and all enthusiasts to contribute towards the development and refinement of the DCP. Please see our contribution guidelines for more details on how you can contribute.
 
-## Contact
+## Technologies Used
 
 
----
+## Author
+- Vishal Kumar, Gautam Jha
+- rajatrathi029@gmail.com
