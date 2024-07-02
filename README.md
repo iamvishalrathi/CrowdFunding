@@ -42,9 +42,8 @@ Interested in contributing? We welcome developers, designers, strategists, and a
 1. Frontend:
 - React.js: A JavaScript library for building user interfaces, providing a component-based architecture for creating reusable UI components.
 - HTML/CSS: Used for structuring and styling the user interface.
-2.Backend:
+2. Backend:
 - Node.js: A JavaScript runtime environment for executing JavaScript code server-side, providing scalability and non-blocking I/O operations.
-- JavaScript: The programming language used for backend development, leveraging Node.js to handle server-side logic, database interactions, and API endpoints.
 3. Blockchain:
 - Solidity: A programming language for writing smart contracts on the Ethereum blockchain, offering features like inheritance, libraries, and complex user-defined types.
 - Hardhat: A development environment for Ethereum smart contracts, facilitating tasks such as compiling, deploying, testing, and debugging smart contracts.
