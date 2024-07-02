@@ -39,6 +39,19 @@ To participate in or initiate a crowdfunding campaign on our platform:
 Interested in contributing? We welcome developers, designers, strategists, and all enthusiasts to contribute towards the development and refinement of the DCP. Please see our contribution guidelines for more details on how you can contribute.
 
 ## Technologies Used
+1. Frontend:
+- React.js: A JavaScript library for building user interfaces, providing a component-based architecture for creating reusable UI components.
+- HTML/CSS: Used for structuring and styling the user interface.
+2.Backend:
+- Node.js: A JavaScript runtime environment for executing JavaScript code server-side, providing scalability and non-blocking I/O operations.
+- JavaScript: The programming language used for backend development, leveraging Node.js to handle server-side logic, database interactions, and API endpoints.
+3. Blockchain:
+- Solidity: A programming language for writing smart contracts on the Ethereum blockchain, offering features like inheritance, libraries, and complex user-defined types.
+- Hardhat: A development environment for Ethereum smart contracts, facilitating tasks such as compiling, deploying, testing, and debugging smart contracts.
+4. Sepolia Testnet: 
+An Ethereum test network for safely testing smart contracts and decentralized applications without using real funds.
+5. Thirdweb Framework:
+ A framework for deploying and interacting with smart contracts, providing utilities for contract deployment, function invocation, and frontend integration, including connecting React frontend to the blockchain.
 
 
 ## Author
